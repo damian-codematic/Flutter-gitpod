@@ -1,0 +1,11 @@
+image:
+  file: .gitpod.Dockerfile
+tasks:
+  - command: |
+      # Gitpod is not able to run emulators within a worspace at this stage as
+      # Google Kubernetes Engine does not support Nested Virtualization.
+      flutter doctor
+
+vscode:
+  extensions:
+    - dart-code.flutter
